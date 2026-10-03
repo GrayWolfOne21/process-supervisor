@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "process-supervisor"
+version = "0.1.0"
+description = "Start a command, stop it on a sensor limit or an operator halt. A missing binary is not a running process."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "GrayWolfOne21" }]
+
+[tool.setuptools.packages.find]
+where = ["src"]
